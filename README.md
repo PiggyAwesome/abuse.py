@@ -7,8 +7,8 @@ Input your YouTube video link into the `url = ''` brackets and then it will gain
 
 
 
-
-
+## Discord.Black Abuse
+Just run it and it will send requests
 
 
 
