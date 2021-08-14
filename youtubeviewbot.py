@@ -1,6 +1,6 @@
 import requests
 import threading
-
+from threading import Thread
 url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 
 
@@ -12,17 +12,6 @@ def do_request():
 
 
 
-threads = []
-
-for i in range(500):
-
- t = threading.Thread(target=do_request())
- t.daemon = True
- threads.append(t)
-
-
-for i in range(500):
- threads[i].start
-
-for i in range(500):
- threads[i].join
+if __name__ == '__main__':
+    for i in range(5000):
+     Thread(target = do_request, daemon = True).start()
